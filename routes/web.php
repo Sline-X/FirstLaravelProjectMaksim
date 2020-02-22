@@ -16,8 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('hello', function () {
-    $name = 'Maksim!';
-    return view('hello', compact('name'));
+    $tasks = [
+        'add task',
+        'find task',
+        'review task'
+    ];
+    return view('hello', compact('tasks'));
 });
 
 //Route::get('/user', 'UserController@index');
