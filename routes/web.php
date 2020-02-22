@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('hello', function () {
-    return view('hello')->with('name', 'Maks');
+    $name = 'John';
+    return view('hello', [
+        'name'=>$name
+
+    ]);
 });
 
 //Route::get('/user', 'UserController@index');
