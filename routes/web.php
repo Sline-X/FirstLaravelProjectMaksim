@@ -16,11 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('hello', function () {
-    return view('hello', [
-        'name' => 'Maksim'
-
-
-    ]);
+    return view('hello')->with('name', 'Maks');
 });
 
 //Route::get('/user', 'UserController@index');
