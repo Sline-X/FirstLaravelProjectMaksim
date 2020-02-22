@@ -16,7 +16,13 @@ Route::get('/', function () {
 });
 
 Route::get('hello', function () {
-    return view('hello');
+    return view('hello', [
+        'name' => 'Maksim'
+
+
+    ]);
 });
+
+//Route::get('/user', 'UserController@index');
 
 
