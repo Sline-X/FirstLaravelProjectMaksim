@@ -16,11 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('hello', function () {
-    $name = 'John';
-    return view('hello', [
-        'name'=>$name
-
-    ]);
+    $name = 'Maksim!';
+    return view('hello', compact('name'));
 });
 
 //Route::get('/user', 'UserController@index');
